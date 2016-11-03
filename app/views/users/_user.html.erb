@@ -1,0 +1,7 @@
+<tr id="<%= dom_id(user) %>">
+  <td><%= user.first_name %></td>
+  <td><%= user.last_name %></td>
+  <td><%= user.phone %></td>
+  <td><%= link_to 'Show', user %></td>
+  <td><%= link_to 'Destroy', user, method: :delete, remote: true, data: { confirm: 'Are you sure?', disable_with: "Please wait..."} %></td>
+</tr>

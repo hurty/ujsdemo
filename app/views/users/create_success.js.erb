@@ -1,0 +1,2 @@
+$("#users-list tbody:last-child").append('<%= j(render @user) %>');
+$('#user-form').html('<%= j(render partial: "form", locals: {user: User.new}) %>');
