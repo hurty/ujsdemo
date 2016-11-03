@@ -1,1 +1,2 @@
-$('#<%= dom_id @user %>').remove();
+<%# The dom_id helper identify each line of the user table (ex: id="user_189"). We just have to remove the good one. %>
+$('#<%= dom_id(@user) %>').remove();

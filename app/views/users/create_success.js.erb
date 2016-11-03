@@ -1,2 +1,4 @@
+<%# We add a new '_user.html.erb' partial at the bottom of the table. %>
 $("#users-list tbody:last-child").append('<%= j(render @user) %>');
+<%# We replace the form block by a new fresh form (this also clear eventual validations errors) %>
 $('#user-form').html('<%= j(render partial: "form", locals: {user: User.new}) %>');

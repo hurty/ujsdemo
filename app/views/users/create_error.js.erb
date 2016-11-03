@@ -1,1 +1,2 @@
+<%# We replace the entire form block with a new one + Rails validations %>
 $('#user-form').html('<%= j(render partial: "form", locals: {user: @user}) %>');
