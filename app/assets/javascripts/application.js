@@ -14,3 +14,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).on('ajax:error', function(xhr, status, error) {
+	console.log(status.responseText);
+	return console.log(error);
+})
